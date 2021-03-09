@@ -1,8 +1,8 @@
-import Component from './component'
-import { domReady, isTesting } from './utils'
+import Component from './component.js'
+import { domReady, isTesting } from './utils.js'
 
 const Alpine = {
-    version: process.env.PKG_VERSION,
+    version: 0.1, //process.env.PKG_VERSION,
 
     pauseMutationObserver: false,
 
@@ -118,6 +118,7 @@ const Alpine = {
     }
 }
 
+/*
 if (! isTesting()) {
     window.Alpine = Alpine
 
@@ -129,5 +130,6 @@ if (! isTesting()) {
         window.Alpine.start()
    }
 }
+*/
 
 export default Alpine
